@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./my_style.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+      integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <!--
+ Réalisez une page HTML nommée “my_form.html” qui sera valide W3C. Elle comportera un formulaire de
+type POST où l’action se fera sur cette même page.
+Les champs du formulaire seront :
+- sexe de type radio, avec comme valeurs Homme, Femme ou Autre
+- civilite de type select, avec comme valeurs M. ou Mme.
+- nom de type texte, avec au moins 2 caractères alphabétiques
+- email de type email
+- telephone de type tel
+- website de type url
+- date de naissance de type date, au format dd/mm/yyyy,
+- hobbies de type checkbox, avec comme valeurs possibles : Jeux video, Cinema, Lecture, Sport et Informatique
+- token de type hidden, avec pour valeur my first website
+- validation de type submit
+Chaque champ aura son label associé.
+ -->
+
+    <section class="formulaire">
+      <form action="" method="post">
+    
+        <div class="sexe">
+        <input type="radio" name="type" checked id="Homme" />
+        <label for="sexe">Homme</label>
+
+        <input type="radio" name="type" checked id="Femme" />
+        <label for="sexe">Femme</label>
+
+        <input type="radio" name="type" checked id="Autre" />
+        <label for="sexe">Autre</label>
+        </div>
+        <br />
+
+        <label for="gender">Civilite :</label>
+        <select id="gender">
+          <option value="madame">Mme.</option>
+          <option value="monsieur">M.</option></select
+        ><br />
+
+        <label for="name">Nom</label> 
+        <input id="name" type="texte "placeholder="Entrez votre nom" minlength="2">
+
+        <br/>
+
+        <label for="email">Email :</label>
+        <input type="email" id="email">
+        
+        <br>
+        <label for="telephone">Telephone :</label>
+        <input type="tel" id="telephone" name="telephone">
+        <br>
+
+
+        <label for="url">website :</label>
+        <input type="url" id="website" . name="website" >
+        <br>
+
+        <label for="age">Age : </label>
+        <input type="date" id="age" name="Age">
+        <br>
+            
+              
+                <input type="checkbox" id="hobbies" name="Jeux" >
+                <label for="hobbies">Jeux video</label>
+                <input type="checkbox" id="hobbies" name="Cinema" >
+                <label for="hobbies">Cinema</label>
+                <input type="checkbox" id="hobbies" name="Lecture" >
+                <label for="hobbies">Lecture</label>
+                <input type="checkbox" id="hobbies" name="Sport" >
+                <label for="hobbies">Sport</label>
+                <input type="checkbox" id="hobbies" name="Informatique" >
+                <label for="hobbies">Informatique</label>
+        <br>
+
+        <input id="token" name="token" type="hidden" value="my first website">
+        <label for="token"></label>
+
+        <br>
+        <input type="submit" value="Validation">
+        <label for="validation"></label>
+
+
+    </div>
+       
+
+
+    </form>
+    </section>
+
+    <script src="./my_script.js"></script>
+  </body>
+</html>
