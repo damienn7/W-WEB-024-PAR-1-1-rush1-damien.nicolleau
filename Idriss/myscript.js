@@ -1,21 +1,21 @@
 //alerte quand on valide le formulaire
 
 document.getElementById("inscription").addEventListener("submit", 
-function (e) {
+function validateform(e) {
        
         
-        var erreur; 
+        let erreur; 
 
-        var sexe = document.getElementById("sexe");
-        var name = document.getElementById("name");
-        var email = document.getElementById("email");
-        var telephone = document.getElementById("telephone");
-        var website = document.getElementById("website");
-        var age = document.getElementById("age");
-        var hobbies = document.getElementById("hobbies");
+        let sexe = document.getElementById("sexe");
+        let name = document.getElementById("name");
+        let email = document.getElementById("email");
+        let telephone = document.getElementById("telephone");
+        let website = document.getElementById("website");
+        let age = document.getElementById("age");
+        let hobbies = document.getElementById("hobbies");
         
         if (!hobbies.value){
-                erreur = "Veuillez renseigner au moins un hobbie"
+                alert(erreur = "Veuillez renseigner au moins un hobbie")
         }
         if (!age.value){
                 erreur = "Veuillez renseigner votre age"
@@ -34,7 +34,7 @@ function (e) {
                 erreur = "Veuillez renseigner votre email"
         }
         if (!name.value){
-                erreur = "Veuillez renseigner votre nom"
+             erreur = "Veuillez renseigner votre nom"
         }
         
       
