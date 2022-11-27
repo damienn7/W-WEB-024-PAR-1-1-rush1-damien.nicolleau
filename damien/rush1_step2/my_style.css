@@ -1,0 +1,161 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+#main {
+  margin: 0 auto;
+  padding: 40px;
+  text-align: center;
+  width: 400px;
+  height: 1000px;
+}
+
+footer{
+  height:20%;
+  position:fixed;
+  bottom:0;
+}
+
+
+
+a {
+  font-size:25px;
+  font-weight: bold;
+  letter-spacing:4px;
+  margin:10px;
+  padding:10px;
+  color:visiblePainted;
+}
+
+a:link{
+  text-decoration:none;
+}
+
+nav{
+  display: inline-block;
+  z-index:3;
+  background-color:white;
+  opacity:1;
+  height: 200px;
+}
+
+ul#main {
+  list-style: none;
+  position:fixed;
+  background-color:white;
+  margin:30px;
+  width: 400px;
+  margin: 0 auto;
+  padding: 40px;
+  height: 100px;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+nav li{
+  font-weight: 100;
+  letter-spacing: 4px;
+  padding: 20px;
+  }
+
+nav li a.active{
+  color: black;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+ul li {
+  display: inline-block;
+}
+
+.hidden{
+  opacity:0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+     }
+
+.form-element-inline{
+  display:flex;
+  flex-direction:row;
+  justify-content:center;
+  padding: 10px;
+  margin:0;
+}
+
+ h1{
+  font-size:20px;
+  margin:18px;
+  padding:0;
+  display: block;
+  letter-spacing: .2rem;
+}
+
+p{
+ font-size: 12px;
+}
+
+.border{
+    border: 2px rgb(66, 135, 245) dashed;
+}
+
+label{
+  width: 150px;
+  cursor: pointer;
+  text-align:start;
+  padding:10px;
+}
+
+.ombre_button{
+  box-shadow: black 0px 5px;
+  border-radius: 5px;
+  width: 85px;
+  height:35px;
+  background-color:rgb(252, 247, 247);
+  border: solid rgb(28, 147, 212);
+  color: rgb(28, 147, 212);
+}
+
+input:hover{
+  border: solid rgb(4, 85, 130);
+  color: rgb(4, 85, 130);
+  transition: background 0.1s linear 0.5s;
+  background-color: rgb(223, 239, 247) ;
+}
+
+input{
+  padding:0;
+}
+
+input[type="radio"]{
+  padding:5px;
+}
+
+select{
+  width:140px;
+}
+
+input[type="date"]{
+  width:140px;
+}
+
+.form-button-inline{
+  display:flex;
+  flex-direction:row;
+  justify-content:flex-end;
+  padding: 10px;
+  margin:0;
+}

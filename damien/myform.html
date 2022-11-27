@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Page d'inscription</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?      family=IBM+Plex+Mono:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./my_style.css"/>
+  </head>
+  <body>
+    <!--
+ Réalisez une page HTML nommée “my_form.html” qui sera valide W3C. Elle comportera un formulaire de
+type POST où l’action se fera sur cette même page.
+Les champs du formulaire seront :
+- sexe de type radio, avec comme valeurs Homme, Femme ou Autre
+- civilite de type select, avec comme valeurs M. ou Mme.
+- nom de type texte, avec au moins 2 caractères alphabétiques
+- email de type email
+- telephone de type tel
+- website de type url
+- date de naissance de type date, au format dd/mm/yyyy,
+- hobbies de type checkbox, avec comme valeurs possibles : Jeux video, Cinema, Lecture, Sport et Informatique
+- token de type hidden, avec pour valeur my first website
+- validation de type submit
+Chaque champ aura son label associé.
+ -->
+
+      
+      <nav class="navigation" id="top">
+        <ul id="main">
+          <li>
+            <a href="" class=".active">Login</a>
+          </li>
+          <li>
+            <a href="">Submit</a>
+          </li>
+        </ul>
+      </nav>
+
+
+    <main id="main" class="content">
+      <h1>Formulaire d'inscription</h1>
+      <form action="" method="post">
+
+        <div class="form-element-inline border">
+          <input type="radio" name="sexe"  id="homme" value="homme"/>      
+          <label for="homme"><p>Homme</p></label>
+        </div>
+        <div class="form-element-inline">
+          <input type="radio" name="sexe"  id="femme" value="femme"/>
+          <label for="femme"><p>Femme</p></label>
+        </div>
+        <div class="form-element-inline">
+          <input type="radio" name="sexe"  id="autre" value="autre"/>
+          <label for="autre"><p>Autre</p></label>
+        </div>
+        
+
+  
+
+        <div class="form-element-inline border">
+        <label for="gender"><p>Civilite :</p></label>
+        <select id="gender" >
+          <option value="madame"><p>Mme.</p></option>
+          <option value="monsieur"><p>M.</p></option>
+        </select>
+        </div>
+        
+        
+        <div class="form-element-inline">
+        <label for="name" ><p>Nom</p></label> 
+         
+        <input id="name" type="texte "placeholder="Entrez votre nom" minlength="2" > <!--apouter un require -->
+          </div>
+        
+        <br/>
+        <div class="form-element-inline">
+        <label for="email" ><p>Email :</p></label>
+          
+        <input type="email" id="email">
+          
+        </div>
+        <br>
+        <div class="form-element-inline border">
+        
+        <label for="telephone"><p>Telephone :</p></label>
+        
+        <input type="tel" id="telephone" name="telephone">
+          
+        </div>
+        
+        <div class="form-element-inline">
+        <label for="url" ><p>Website :</p></label>
+       
+        <input type="url" id="website"  name="website">
+        
+        </div>
+        
+        <div class="form-element-inline">
+        <label for="age" class="label"><p>Age : </p></label>
+        <input type="date" id="age" name="Age">
+        
+        </div>
+          
+        <div class="form-element-inline border">             
+          <input type="checkbox" id="hobbies" name="Jeux" >
+          <label for="hobbies"><p>Jeux video</p></label>
+        </div>
+        <div class="form-element-inline">
+          <input type="checkbox" id="hobbies" name="Cinema" >
+          <label for="hobbies"><p>Cinema</p></label>
+        </div>
+        
+        <div class="form-element-inline">
+          <input type="checkbox" id="hobbies" name="Lecture" >
+          <label for="hobbies"><p>Lecture</p></label>
+        </div>
+        
+        <div class="form-element-inline border">
+          <input type="checkbox" id="hobbies" name="Sport" >
+          <label for="hobbies"><p>Sport</p></label>
+        </div>
+        
+        <div class="form-element-inline">
+          <input type="checkbox" id="hobbies" name="Informatique" >
+          <label for="hobbies"><p>Informatique</p></label>
+        </div>
+        
+
+        <div class="form-element-inline">
+        <input id="token" name="token" type="hidden" value="my first website">
+        <label for="token"></label>
+        </div>
+        
+        <div class="form-button-inline">
+        <input type="submit" value="Validation" class="ombre_button">
+        <label for="validation"></label>
+        </div>
+    </form>
+    </main>
+
+    <footer>
+      <ul>
+        <li>
+          <a href="#top">Go top</a>
+        </li>
+      </ul>
+    </footer>
+    <script src="./my_script.js"></script>
+  </body>
+</html>
