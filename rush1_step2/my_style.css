@@ -1,0 +1,87 @@
+*{
+  font-size: 12px;
+}
+
+.border{
+  border: 2px rgb(66, 135, 245) dashed;
+}
+
+
+h1{
+  font-size:20px;
+  margin:18px;
+  padding:0;
+  display: flex;
+  letter-spacing: .2rem;
+  justify-content: center;
+}
+
+.nom {
+  border-radius: 2px;
+  border-style: dotted;
+  border-color: blue
+}
+
+.website {
+  border-radius: 2px;
+  border-style: dotted;
+  border-color: blue
+}
+
+
+label{
+  width: 150px;
+  cursor: pointer;
+  text-align:start;
+  padding:10px;
+  
+}
+
+.valider{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: center;
+}
+
+
+.valider input  {
+  box-shadow: black 0px 5px;
+border-radius: 5px;
+border-radius: 5px;
+width: 85px;
+height:35px;
+background-color:rgb(252, 247, 247);
+border: solid rgb(28, 147, 212);
+color: rgb(28, 147, 212);
+
+}
+
+input{
+  padding:0;
+}
+  
+input:hover{
+  border: solid rgb(4, 85, 130);
+  color: rgb(4, 85, 130);
+  transition: background 0.1s linear 0.5s;
+  background-color: rgb(223, 239, 247) ;
+}
+
+
+p#erreur{
+  display: flex;
+  justify-content: center;
+}
+
+.ombre_button{
+  box-shadow: black 0px 5px;
+  border-radius: 5px;
+  width: 85px;
+  height:35px;
+  background-color:rgb(252, 247, 247);
+  border: solid rgb(28, 147, 212);
+  color: rgb(28, 147, 212);
+}
