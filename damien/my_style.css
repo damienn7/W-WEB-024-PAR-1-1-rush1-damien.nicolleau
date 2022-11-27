@@ -6,6 +6,8 @@ html, body {
 body{
   margin: 0;
   padding: 0;
+  height:100%;
+  width:100%;
   font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -13,7 +15,7 @@ body{
   margin: 0 auto;
   padding: 40px;
   text-align: center;
-  width: 350px;
+  width: 300px;
   height: 1000px;
 }
 
@@ -159,3 +161,37 @@ input[type="date"]{
   padding: 10px;
   margin:0;
 }
+
+/*
+Composition pour les champs invalides
+*/
+
+input:invalid{
+    border-color: #900;
+    background-color: #FDD;
+    border: 2px solid red;
+  }
+  
+  input:focus:invalid {
+    outline: none;
+  }
+  
+  /* Voici la mise en forme pour les erreurs */
+  .error {
+    width  : 100%;
+    padding: 0;
+    z-index: 3000;
+  
+    font-size: 80%;
+    color: white;
+    background-color: #900;
+    border-radius: 0 0 5px 5px;
+  
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+  .error.active {
+    padding: 0.3em;
+    z-index:3000;
+  }
